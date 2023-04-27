@@ -8,16 +8,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AzureDemoApplication implements CommandLineRunner {
+public class AzureDemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AzureDemoApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		System.out.println("testing");
-
-		ClientSecretCredential _client_secret= new ClientSecretCredential("","","",new IdentityClientOptions());
-	}
 }
